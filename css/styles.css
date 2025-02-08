@@ -1,0 +1,204 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  
+  header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .container h1{
+    display: inline-block;
+  }
+
+  .navbar{
+    display: inline-block;
+    margin-left: 15%;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .logo {
+    display: inline-block;
+    padding-left: 10px;
+    height: 100px;
+}
+  
+  .hero {
+    background: #007bff;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .hero img {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 1rem;
+    border-radius: 10px;
+  }
+  
+  #about, #services, #contact {
+    background: #fff;
+    padding: 2rem 0;
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #about img, #contact img {
+    width: 100%;
+    max-width: 50%;
+    display: inline-block;
+    margin: 1rem auto;
+    padding: 4px;
+    border-width: 2px red;
+    background-color: #333;
+    margin: auto;
+  }
+  #services img{
+    margin-left: 25%;
+    display: inline-block;
+    width: 23%;
+  }
+
+  .sss{
+    background-color: #98caff;
+  }
+  .para{
+    display: inline-block;
+    margin: auto;
+    width: 80%;
+  }
+
+  .para-s{
+    display: inline-block;
+    margin: auto;
+    width: 40%;
+  }
+
+  .para-a{
+    display: inline-block;
+    margin: auto;
+    width: 40%;
+  }
+
+  .service-img{
+    width: 100px;
+  }
+
+  .container-contact{
+   padding-left: 5%;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    margin-top: 2rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form label {
+    margin: 0.5rem 0 0.2rem;
+    font-size: 1.1rem;
+  }
+  
+  form input, form textarea, form button {
+    width: 90%;
+    max-width: 500px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  form button:hover {
+    background: #0056b3;
+  }
+
+
+  @media screen and (max-width: 1000px){
+
+    #about img{
+      /* margin-left: 25%; */
+      display: block;
+      width: 70%;
+    }
+
+    .para-s{
+      display: block;
+      margin: auto;
+      width: 80%;
+    }
+
+    #services img{
+      /* margin-left: 25%; */
+      display: block;
+      width: 70%;
+    }
+
+    .para-a{
+      display: block;
+      margin: auto;
+      width: 80%;
+    }
+  
+  }
+  
