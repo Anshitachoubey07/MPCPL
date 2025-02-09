@@ -5,145 +5,99 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maa Parmeswari Cons Pvt. Ltd.</title>
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="images/MPCPL.ico" type="image/x-icon">
-  <script src="index.js"></script>
-
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript">
-      (function () {
-          emailjs.init("hbcerdvzglaGEBHZz");
-      })();
-  </script>
+    <link rel="icon" href="images/MPCPL.ico" type="image/x-icon">
+    <script src="script.js"></script>
+  
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("hbcerdvzglaGEBHZz");
+        })();
+    </script>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <img src="images/MPCPL logo.jpeg" alt="Company Logo" class="logo">
-      <div class="navbar">
-      <h1>Maa Parmeswari Cons Pvt. Ltd.</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    </div>
-  </header>
+    <header>
+        <img src="images/MPCPL logo.jpeg" alt="Company Logo" class="logo">
+        <h1>MAA PARMESWARI CONS PRIVATE LIMITED</h1>
+        <div class="dropdown" onclick="toggleDropdown()">☰</div>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-  <main>
-    <!-- Home Page -->
-    <section class="hero">
-      <div class="container">
-        <h2>Welcome to Maa Parmeswari Cons Pvt. Ltd.</h2>
+    </header>
+    <div class="home-content" id="home">
+        <h3>Welcome to</h3>
+        <h2 class="company-name">MAA PARMESWARI CONS PRIVATE LIMITED</h2>
         <p>Your trusted partner in construction, building supplies, and paper product manufacturing.</p>
-        <img src="images/BackgroundImage.jpeg" alt="Construction and Paper Products">
-      </div>
-    </section>
-
-    <!-- About Page -->
-    <section id="about">
-      <div class="container">
+        <img src="images/BackgroundImage.jpeg" alt="Company Image" class="responsive-image">
+    </div>
+    <section class="about" id="about">
         <h2>About Us</h2>
-        <p class="para-a">Maa Parmeswari Cons Private Limited is a Private company incorporated on 09 October 2021. It is classified as a Non-governmental company registered with the Registrar of Companies, Patna. As per the NIC code, it is inolved in Manufacture of paper and paper product.
-<br>
-        <br>    
-            Directors of Maa Parmeswari Cons are <strong>RAVI RANJAN TIWARY</strong>.
-           <br> 
-           <br>
-            Users may contact Maa Parmeswari Cons on its Email address - <strong>maaparmeswaricpl@gmail.com</strong>. Registered address of Maa Parmeswari Cons is C/O SRI RAVI RANJAN TIWARY S/O SHASHI KANT TIWARY NIRANJANPUR GOLAMBAR , BUXAR, Bihar, India - 802116.
-
-        <img src="images/about.png" alt="About Us">
-      </div>
+        <div class="about-content">
+            <p class="para-a">Maa Parmeswari Cons Private Limited is a Private company incorporated on 09 October 2021. It is classified as a Non-governmental company registered with the Registrar of Companies, Patna.The previous CIN of this company was <strong>U45500BR2021PTC054556</strong> and the current CIN is <strong>U21000BR2021PTC054556</strong>. As per the NIC code, it is involved in Manufacture of paper and paper product.
+            <br>Directors of Maa Parmeswari Cons are <strong>RAVI RANJAN TIWARY</strong> and <strong>PUSHPA TIWARY</strong>.
+        <br>Users may contact Maa Parmeswari Cons on its Email address - <a href="mailto:maaparmeswaricpl@gmail.com">maaparmeswaricpl@gmail.com</a>.
+        <br>Registered address of Maa Parmeswari Cons is C/O SRI RAVI RANJAN TIWARY S/O SHASHI KANT TIWARY NIRANJANPUR GOLAMBAR, BUXAR, Bihar, India - 802116.</p>
+            <img src="images/about.png" alt="Company Image" class="about-image">
+        </div>
     </section>
-
-    <!-- Services Page -->
-    <section id="services">
-      <div class="container">
+    <section class="services" id="services">
         <h2>Our Services</h2>
-        <ul>
-          <div class="sss">
-          <li><strong>Construction and Building</strong></li>
-          <p class="para-s">"Our Construction and Building service is committed to delivering top-notch solutions for 
-            residential, commercial, and industrial projects. We specialize in designing and constructing robust, 
-            sustainable structures that meet modern standards and client requirements. Whether it's creating 
-            state-of-the-art office spaces, residential complexes, or industrial facilities, we bring expertise, 
-            innovation, and precision to every project. With a focus on quality, safety, and timely delivery, we ensure 
-            that our constructions stand as a testament to durability and excellence. Partner with us to turn your vision 
-            into reality, backed by a team of skilled engineers, architects, and construction professionals."</p>
-          <img src="images/service1.png" alt="Our Services" class="service-img">
+        <div class="service">
+            
+            <p><strong>Construction and Building</strong> <br>
+                Our Construction and Building service is committed to delivering top-notch solutions for residential, commercial, and industrial projects. We specialize in designing and constructing robust, sustainable structures that meet modern standards and client requirements. Whether it's creating state-of-the-art office spaces, residential complexes, or industrial facilities, we bring expertise, innovation, and precision to every project. With a focus on quality, safety, and timely delivery, we ensure that our constructions stand as a testament to durability and excellence. Partner with us to turn your vision into reality, backed by a team of skilled engineers, architects, and construction professionals.</p>
+            <img src="images/service1.png" alt="Construction and Building" class="service-image">
         </div>
-          <br>
-          <br>
-
-          <div class="sss">
-          <li><strong>Civil Engineering - Construction of Roads and Railways</strong></li>
-          <p class="para-s">Our expertise in civil engineering focuses on building reliable and efficient infrastructure that connects 
-            communities and fosters economic growth. We specialize in the construction of roads and railways, ensuring 
-            high-quality workmanship and adherence to international safety and engineering standards. From planning and 
-            design to execution and maintenance, we use advanced technology and sustainable practices to deliver durable 
-            transportation networks. Whether it's highways, rural roads, or railway tracks, our commitment is to provide 
-            infrastructure that stands the test of time while minimizing environmental impact.</p>          
-          <img src="images/service3.png" alt="Our Services" class="service-img">
+        <div class="service">
+            <p><strong>Civil Engineering - Construction of Roads and Railways</strong> <br>
+                Our expertise in civil engineering focuses on building reliable and efficient infrastructure that connects communities and fosters economic growth. We specialize in the construction of roads and railways, ensuring high-quality workmanship and adherence to international safety and engineering standards. From planning and design to execution and maintenance, we use advanced technology and sustainable practices to deliver durable transportation networks. Whether it's highways, rural roads, or railway tracks, our commitment is to provide infrastructure that stands the test of time while minimizing environmental impact.</p>
+            <img src="images/service2.png" alt="Civil Engineering" class="service-image">
+        </div>
+        <div class="service">
+            <p><strong>Manufacture of Paper and Paper Products</strong> <br>
+                At Maa Parmeswari Cons Pvt. Ltd., we specialize in the manufacture of high-quality paper and paper products to meet the diverse needs of industries and consumers. Our production process emphasizes sustainability, leveraging advanced technology and eco-friendly practices to create products that are durable, versatile, and environmentally responsible. From office stationery and packaging materials to custom paper solutions for businesses, our offerings are designed to ensure superior quality and functionality.</p>
+            <img src="images/service3.png" alt="Paper and Paper Products" class="service-image">
+        </div>
+    </section> 
+    <section class="contact" id="contact">
+        <div class="container-contact">
+            <!-- <p class="para">Feel free to reach out for any inquiries or collaborations.</p> -->
+            <form action="#"  class="para">
+              <h1>Contact form</h1>
+              <div class="form-group">
+                <h5 for="name">Name</h5>
+                <input type="text" class="form-control" id="name" placeholder="Enter name" required/>
+            </div>
+            <div class="form-group">
+                <h5 for="email">Email</h5>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" required/>
+            </div>
+            <div class="form-group">
+                <h5 for="phone">Contact No.</h5>
+                <input type="number" class="form-control" id="phone" placeholder="Enter contact number" required/>
+            </div>
+            <div class="form-group">
+                <h5 for="message">Message</h5>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button class="buttono" onclick="sendMail()">Submit</button>
+        </div>
+            </form>
           </div>
-          <br>
-          <br>
-          
-          <div class="sss">
-          <li><strong>Manufacture of Paper and Paper Products</strong></li>
-          <p class="para-s">At Maa Parmeswari Cons Pvt. Ltd., we specialize in the manufacture of high-quality paper and paper products 
-            to meet the diverse needs of industries and consumers. Our production process emphasizes sustainability, 
-            leveraging advanced technology and eco-friendly practices to create products that are durable, versatile, and 
-            environmentally responsible. From office stationery and packaging materials to custom paper solutions for 
-            businesses, our offerings are designed to ensure superior quality and functionality.</p>
-          <img src="images/service2.png" alt="Our Services" class="service-img">
-          </div>
-        </ul>
-        <!-- <img src="images/services.jpg" alt="Our Services"> -->
-      </div>
-    </section>
-
-    <!-- Contact Page -->
-    <section id="contact">
-      <div class="container-contact">
-        <!-- <p class="para">Feel free to reach out for any inquiries or collaborations.</p> -->
-        <form action="#"  class="para">
-          <h1>Contact form</h1>
-          <div class="form-group">
-            <h5 for="name">Name</h5>
-            <input type="text" class="form-control" id="name" placeholder="Enter name" />
+        </section>
+    
+      <footer>
+        <div class="container">
+          <img src="images/MPCPL logo.jpeg" alt="Company Logo" class="logo logo-f">
+          <p>&copy; 2025 Maa Parmeswari Cons Pvt. Ltd. All Rights Reserved.</p>
         </div>
-        <div class="form-group">
-            <h5 for="email">Email</h5>
-            <input type="email" class="form-control" id="email" placeholder="Enter email" />
-        </div>
-        <div class="form-group">
-            <h5 for="phone">Contact No.</h5>
-            <input type="number" class="form-control" id="phone" placeholder="Enter contact number" />
-        </div>
-        <div class="form-group">
-            <h5 for="message">Message</h5>
-            <textarea class="form-control" id="message" rows="3"></textarea>
-        </div>
-        <button class="buttono" onclick="sendMail()">Submit</button>
-    </div>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <img src="images/MPCPL logo.jpeg" alt="Company Logo" class="logo">
-      <p>&copy; 2025 Maa Parmeswari Cons Pvt. Ltd. All Rights Reserved.</p>
-    </div>
-  </footer>
-  <script src="script.js"></script>
-
-
-
-  
+      </footer>
+    <script src="script.js"></script>
 </body>
 </html>
