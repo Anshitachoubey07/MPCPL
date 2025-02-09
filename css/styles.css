@@ -1,138 +1,108 @@
 /* General Reset */
-body, h1, h2, h3, p, ul, li, a {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background: #f4f4f4;
-  }
-  
-  .container {
-    width: 90%;
-    margin: auto;
-    max-width: 1200px;
-  }
-  
-  header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-  }
-  
-  header h1 {
-    text-align: center;
-    font-size: 2.5rem;
-  }
-
-  .container h1{
-    display: inline-block;
-  }
-
-  .navbar{
-    display: inline-block;
-    margin-left: 15%;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin-top: 1rem;
-  }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-
-  .logo {
-    display: inline-block;
-    padding-left: 10px;
-    height: 100px;
 }
-  
-  .hero {
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px; /* Adjust as needed */
+}
+
+.dropdown{
+    display: none;
+}
+nav {
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.home-content {
+    padding: 20px;
     background: #007bff;
-    color: #fff;
-    padding: 2rem 0;
     text-align: center;
-  }
-  
-  .hero img {
-    width: 100%;
-    max-width: 500px;
-    margin-top: 1rem;
-    border-radius: 10px;
-  }
-  
-  #about, #services, #contact {
-    background: #fff;
-    padding: 2rem 0;
-    margin: 2rem 0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  #about img, #contact img {
-    width: 100%;
-    max-width: 50%;
-    display: inline-block;
-    margin: 1rem auto;
-    padding: 4px;
-    border-width: 2px red;
-    background-color: #333;
-    margin: auto;
-  }
-  #services img{
-    margin-left: 25%;
-    display: inline-block;
-    width: 23%;
-  }
+    margin: 20px 0;
+}
 
-  .sss{
-    background-color: #98caff;
-  }
-  .para{
-    display: inline-block;
-    margin: auto;
-    width: 80%;
-  }
+.company-name {
+    font-size: 2.5em; /* Adjust as needed */
+    font-weight: bold;
+    font-family: 'Arial', sans-serif; /* Change to a stylish font if desired */
+}
 
-  .para-s{
-    display: inline-block;
-    margin: auto;
+.responsive-image {
     width: 40%;
-  }
+    max-width: 60vw; /* Cover 60% of the viewport width */
+    height: auto; /* Maintain aspect ratio */
+}
 
-  .para-a{
-    display: inline-block;
-    margin: auto;
-    width: 40%;
-  }
+.about{
+    padding: 50px;
+    text-align: center;
+}
 
-  .service-img{
-    width: 100px;
-  }
+.about-content {
+    display: flex;
+    align-items: center;
+}
+.para-a{
+    width: 60%;
+}
 
-  .container-contact{
-   padding-left: 5%;
-  }
+.about-image {
+    margin-left: 10px;
+    width: 50%; /* Adjust to take 50% of the screen */
+    height: auto; /* Maintain aspect ratio */
+}
 
-  footer {
+.services{
+    background-color: #d1d1d1;
+    padding: 80px;
+    text-align: center;
+}
+
+.service{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    padding-right: 70px;
+}
+
+.service-image{
+    width: 30%;
+    height: auto;
+    padding: 20px;
+}
+
+.contact{
+    margin-top: 10%;
+    text-align: center;
+}
+
+footer {
     text-align: center;
     padding: 1rem 0;
     background: #333;
@@ -141,20 +111,25 @@ body, h1, h2, h3, p, ul, li, a {
   }
   
   form {
-    display: flex;
-    flex-direction: column;
     align-items: center;
   }
   
+  .form-group{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+  }
+
   form label {
     margin: 0.5rem 0 0.2rem;
     font-size: 1.1rem;
   }
   
   form input, form textarea, form button {
-    width: 90%;
-    max-width: 500px;
-    padding: 0.5rem;
+    width: 70%;
+    background-color: #e4e3e3;
+    padding: 20px;
+    margin-left: 20px;
     margin-bottom: 1rem;
     font-size: 1rem;
     border: 1px solid #ccc;
@@ -173,32 +148,64 @@ body, h1, h2, h3, p, ul, li, a {
     background: #0056b3;
   }
 
+@media (max-width: 700px) {
 
-  @media screen and (max-width: 1000px){
 
-    #about img{
-      /* margin-left: 25%; */
-      display: block;
-      width: 70%;
+    .logo{
+        display: none;
+    }
+    .logo-f{
+        display: inline-block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #f8f8f8;
+        top: 60px; /* Adjust based on header height */
+        right: 20px;
+        width: 100%;
     }
 
-    .para-s{
-      display: block;
-      margin: auto;
-      width: 80%;
+    nav ul.show {
+        display: flex;
     }
 
-    #services img{
-      /* margin-left: 25%; */
-      display: block;
-      width: 70%;
+    .dropdown {
+        display: block;
+        padding-right: 20px;
+        cursor: pointer;
+    }
+
+    .about-content {
+        display: block;
     }
 
     .para-a{
-      display: block;
-      margin: auto;
-      width: 80%;
+        width: 100%;
     }
-  
-  }
+
+    .about-image {
+        margin-left: 0px;
+        width: 80%; /* Adjust to take 50% of the screen */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .services{
+        padding: 50px;
+        text-align: center;
+        display: block;
+    }
+
+    .service{
+        display: block;
+    }
+    
+    .service-image{
+        width: 70%;
+        height: auto;
+    }
+    
+}
+
   
